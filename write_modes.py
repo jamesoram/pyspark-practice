@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode, avg
 
-spark = SparkSession.builder.appName("WorkingJSON").getOrCreate()
+spark = SparkSession.builder.appName("WriteModes").getOrCreate()
 df = spark.read.option("header", "true").csv("employees.csv")
 
 # save as Parquet

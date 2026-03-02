@@ -1,5 +1,4 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode, avg
 
 spark = SparkSession.builder.appName("WriteModes").getOrCreate()
 df = spark.read.option("header", "true").csv("employees.csv")

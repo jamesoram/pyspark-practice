@@ -17,7 +17,7 @@ try:
                 found.append(word)
 
     if found:
-        print(found)
+        print(f"found tokens: {found}")
     else:
         print("nothing found")
 
